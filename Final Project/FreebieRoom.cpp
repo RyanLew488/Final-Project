@@ -1,7 +1,7 @@
 #include <iostream>
 #include "FreebieRoom.hpp"
 
-void FreebieRoom::displayRoom
+void FreebieRoom::displayRoom()
 {
 	std::cout << "Here is your location on the map\n";
 	std::cout << "[ ][ ][ ][ ]\n";
@@ -9,7 +9,7 @@ void FreebieRoom::displayRoom
 	std::cout << "[ ]         \n";
 
 }
-void FreebieRoom::solve(std::vector<Object>* bag)
+void FreebieRoom::solve(bool& solved,std::vector<Object>* bag)
 {
 	bool coconutFound = false;
 	if (!coconutFound)
@@ -25,6 +25,10 @@ void FreebieRoom::solve(std::vector<Object>* bag)
 	}
 }
 
+void FreebieRoom::displayRoom(int type)
+{
+	//unused
+}
 FreebieRoom::FreebieRoom()
 {
 

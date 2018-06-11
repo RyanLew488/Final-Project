@@ -2,9 +2,9 @@
 #include "BunnyCaveRoom.hpp"
 
 
-void BunnyCaveRoom::solve(bool& bSolved,std::vector<Object>* bag)
+void BunnyCaveRoom::solve(bool& solved,std::vector<Object>* bag)
 {
-	if (bSolved)
+	if (solved)
 	{
 		int choice = 0;
 		bool correctAnswer = false;
@@ -24,7 +24,7 @@ void BunnyCaveRoom::solve(bool& bSolved,std::vector<Object>* bag)
 			if (choice == 3)
 			{
 				std::cout << "You count to 3 and throw the grenade into the bunny's lair it explodes and kills the bunny!\n";
-				bSolved = true;
+				correctAnswer = true;
 				if (bag->size() < 2)
 				{
 					Object holyGrail(1, "The Holy Grail");
@@ -44,6 +44,17 @@ void BunnyCaveRoom::solve(bool& bSolved,std::vector<Object>* bag)
 	}
 }
 
+void BunnyCaveRoom::displayRoom()
+{
+	std::cout << "Here is your location on the map\n";
+	std::cout << "[ ][ ][ ][ ]\n";
+	std::cout << "[ ][x][ ]   \n";
+	std::cout << "[ ]         \n";
+}
+void BunnyCaveRoom::displayRoom(int type)
+{
+	//unused
+}
 BunnyCaveRoom::BunnyCaveRoom()
 {
 }

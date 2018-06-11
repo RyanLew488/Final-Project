@@ -6,9 +6,9 @@ QuizRoom::QuizRoom()
 {
 }
 
-void QuizRoom::solve(bool& qSolved, std::vector<Object>* bag)
+void QuizRoom::solve(bool& solved, std::vector<Object>* bag)
 {
-	if (!qSolved)
+	if (!solved)
 	{
 		bool correctAnswer = false;
 		std::cout << "-----------------------------------------------\n";
@@ -47,6 +47,17 @@ void QuizRoom::solve(bool& qSolved, std::vector<Object>* bag)
 	}
 }
 
+void QuizRoom::displayRoom()
+{
+	std::cout << "Here is your location on the map\n";
+	std::cout << "[ ][ ][ ][ ]\n";
+	std::cout << "[ ][ ][ ]   \n";
+	std::cout << "[x]         \n";
+}
+void QuizRoom::displayRoom(int type)
+{
+	//unused
+}
 QuizRoom::~QuizRoom()
 {
 }

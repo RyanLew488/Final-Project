@@ -5,7 +5,8 @@ class FreebieRoom : public Space
 {
 public:
 	void displayRoom();
-	void solve(std::vector<Object>* bag);
+	void solve(bool& solved, std::vector<Object>* bag);
+	void displayRoom(int type);
 	FreebieRoom();
 	~FreebieRoom();
 

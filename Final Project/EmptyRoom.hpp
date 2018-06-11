@@ -8,6 +8,8 @@ private:
 public:
 	EmptyRoom(int roomNumber);
 	~EmptyRoom();
-	void solve();
+	void displayRoom(int type);
+	void displayRoom();
+	void solve(bool& solved, std::vector<Object>* bag);
 };
 

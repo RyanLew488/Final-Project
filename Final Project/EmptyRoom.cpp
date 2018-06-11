@@ -1,7 +1,7 @@
 #include <iostream>
 #include "EmptyRoom.hpp"
 
-void EmptyRoom::solve()
+void EmptyRoom::solve(bool& solved, std::vector<Object>* bag)
 {
 	std::cout << "You enter a empty room...There is nothing in here\n";
 }
@@ -36,6 +36,11 @@ void EmptyRoom::displayRoom(int roomNum)
 		}
 
 	}
+}
+
+void EmptyRoom::displayRoom()
+{
+	//unused
 }
 EmptyRoom::EmptyRoom(int roomNumber)
 {

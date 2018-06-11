@@ -14,7 +14,7 @@ class Game
 private:
 	std::vector<Object> bag;
 public:
-	play();
+	void play();
 	Game();
 	~Game();
 };

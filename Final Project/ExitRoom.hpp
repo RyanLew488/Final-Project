@@ -5,7 +5,9 @@ class ExitRoom :
 	public Space
 {
 public:
-	void solve(std::vector<Object> bag);
+	void solve(bool& solved, std::vector<Object>* bag);
+	void displayRoom();
+	void displayRoom(int type);
 	ExitRoom();
 	~ExitRoom();
 };

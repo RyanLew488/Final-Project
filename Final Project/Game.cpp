@@ -1,14 +1,14 @@
 #include "Game.hpp"
 
-Game::play()
+void Game::play()
 {
-	qRoom = new QuizRoom();
-	bRoom = new BunnyCaveRoom();
-	fRoom = new FreebieRoom;
-	eRoom1 = new EmptyRoom(1);
-	eRoom2 = new EmptyRoom(2); 
-	eRoom3 = new EmptyRoom(3);
-	exitRoom = new ExitRoom(); 
+	QuizRoom* qRoom = new QuizRoom();
+	BunnyCaveRoom* bRoom = new BunnyCaveRoom();
+	FreebieRoom* fRoom = new FreebieRoom;
+	EmptyRoom* eRoom1 = new EmptyRoom(1);
+	EmptyRoom* eRoom2 = new EmptyRoom(2); 
+	EmptyRoom* eRoom3 = new EmptyRoom(3);
+	ExitRoom* exitRoom = new ExitRoom(); 
 
 }
 
