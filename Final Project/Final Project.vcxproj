@@ -119,6 +119,9 @@
     <ClInclude Include="ExitRoom.hpp" />
     <ClInclude Include="FreebieRoom.hpp" />
     <ClInclude Include="BunnyCaveRoom.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="helperFunctions.hpp" />
+    <ClInclude Include="Object.hpp" />
     <ClInclude Include="QuizRoom.hpp" />
     <ClInclude Include="Space.hpp" />
   </ItemGroup>
@@ -127,6 +130,10 @@
     <ClCompile Include="ExitRoom.cpp" />
     <ClCompile Include="FreebieRoom.cpp" />
     <ClCompile Include="BunnyCaveRoom.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="helperFunctions.cpp" />
+    <ClCompile Include="MontyPythonEscapeMain.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="QuizRoom.cpp" />
     <ClCompile Include="Space.cpp" />
   </ItemGroup>

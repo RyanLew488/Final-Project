@@ -1,11 +1,11 @@
 #pragma once
 #include "Space.hpp"
-class PuzzleRoom :
-	public Space
+
+class BunnyCaveRoom : public Space
 {
 public:
-	void solve(bool& bSolved);
-	PuzzleRoom();
-	~PuzzleRoom();
+	void solve(bool& bSolved, std::vector<Object>* bag);
+	BunnyCaveRoom();
+	~BunnyCaveRoom();
 };
 

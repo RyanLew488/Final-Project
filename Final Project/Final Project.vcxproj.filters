@@ -21,42 +21,63 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Space.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QuizRoom.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FreebieRoom.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BunnyCaveRoom.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="EmptyRoom.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Space/Space Subclasses</Filter>
     </ClInclude>
     <ClInclude Include="ExitRoom.hpp">
+      <Filter>Header Files\Space/Space Subclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="FreebieRoom.hpp">
+      <Filter>Header Files\Space/Space Subclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="BunnyCaveRoom.hpp">
+      <Filter>Header Files\Space/Space Subclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="QuizRoom.hpp">
+      <Filter>Header Files\Space/Space Subclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Space.hpp">
+      <Filter>Header Files\Space/Space Subclasses</Filter>
+    </ClInclude>
+    <ClInclude Include="helperFunctions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Space.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QuizRoom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FreebieRoom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BunnyCaveRoom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="EmptyRoom.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Space/Space Subclasses</Filter>
     </ClCompile>
     <ClCompile Include="ExitRoom.cpp">
+      <Filter>Source Files\Space/Space Subclasses</Filter>
+    </ClCompile>
+    <ClCompile Include="FreebieRoom.cpp">
+      <Filter>Source Files\Space/Space Subclasses</Filter>
+    </ClCompile>
+    <ClCompile Include="BunnyCaveRoom.cpp">
+      <Filter>Source Files\Space/Space Subclasses</Filter>
+    </ClCompile>
+    <ClCompile Include="QuizRoom.cpp">
+      <Filter>Source Files\Space/Space Subclasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Space.cpp">
+      <Filter>Source Files\Space/Space Subclasses</Filter>
+    </ClCompile>
+    <ClCompile Include="helperFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MontyPythonEscapeMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

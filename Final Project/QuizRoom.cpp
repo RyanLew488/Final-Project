@@ -1,11 +1,12 @@
 #include <iostream>
 #include "QuizRoom.hpp"
+#include "helperFunctions.hpp"
 
 QuizRoom::QuizRoom()
 {
 }
 
-void QuizRoom::solve(bool& qSolved)
+void QuizRoom::solve(bool& qSolved, std::vector<Object>* bag)
 {
 	if (!qSolved)
 	{
@@ -25,11 +26,13 @@ void QuizRoom::solve(bool& qSolved)
 			std::cout << "4: Ask her to cast a spell\n";
 			std::cout << "TA HINT: It's answer 2 if you haven't watched Monty Python and the holy grail\n";
 			std::cout << "After some deliberation you choose to hit button: ";
+			choice = iRangeValid("",1, 4);
 
-			if (choice == 3)
+			if (choice == 2)
 			{
 				std::cout << "\nThe screen flashes green and a compartment opens up\n";
 				std::cout << "You grab the duck\n";
+				Object duck(3, "A duck");
 				correctAnswer = true;
 			}
 			else

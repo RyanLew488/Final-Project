@@ -1,8 +1,10 @@
 #pragma once
-class QuizRoom
+#include "Space.hpp"
+
+class QuizRoom : public Space
 {
 public:
-	void solve(bool& Solved);
+	void solve(bool& Solved, std::vector<Object>* bag);
 	QuizRoom();
 	~QuizRoom();
 };

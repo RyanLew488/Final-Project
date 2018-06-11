@@ -2,7 +2,7 @@
 #include "BunnyCaveRoom.hpp"
 
 
-void PuzzleRoom::solve(bool& bSolved)
+void BunnyCaveRoom::solve(bool& bSolved,std::vector<Object>* bag)
 {
 	if (bSolved)
 	{
@@ -20,10 +20,21 @@ void PuzzleRoom::solve(bool& bSolved)
 			std::cout << "3\n";
 			std::cout << "4\n";
 			std::cout << "5\n";
+			choice = iRangeValid("", 1, 5);
 			if (choice == 3)
 			{
 				std::cout << "You count to 3 and throw the grenade into the bunny's lair it explodes and kills the bunny!\n";
 				bSolved = true;
+				if (bag->size() < 2)
+				{
+					Object holyGrail(1, "The Holy Grail");
+					bag->push_back(holyGrail);
+					correctAnswer = true;
+				}
+				else
+				{
+					std::cout << "Your bag is full \n";
+				}
 			}
 			else
 			{
@@ -33,11 +44,11 @@ void PuzzleRoom::solve(bool& bSolved)
 	}
 }
 
-PuzzleRoom::PuzzleRoom()
+BunnyCaveRoom::BunnyCaveRoom()
 {
 }
 
 
-PuzzleRoom::~PuzzleRoom()
+BunnyCaveRoom::~BunnyCaveRoom()
 {
 }
